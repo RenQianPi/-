@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<meta charset="UTF-8">
+<html>
+<head>
+<title>标签练习</title>
+<script type="text/javascript">  
+    function openWindow(){ 
+        var queren=confirm("是否打开新窗口") 
+        if (queren==true){
+            var shuru=prompt("请输入网址：","http://www.imooc.com")
+            if(shuru!=null){
+                window.open(shuru,'_blank','menubar=no,toolbar=no,width=400,hight=500');
+            }
+            else{
+                alert("取消了浏览");
+            }
+        }
+        else{
+            alert("取消了打开新网页");
+        }
+    }
+</script> 
+</head>
+<body>
+    <script type="text/javascript"> 
+        var infos = [
+            ['小A','女','21','大一'],
+        ['小B','男',23,'大三'],
+        ['小C','男',24,'大四'],
+        ['小C','男',24,'大四'],
+        ['小D','女',21,'大一'],
+        ['小E','女',22,'大四'],
+        ['小F','男',21,'大一'],
+        ['小G','女',22,'大二'],
+        ['小H','女',20,'大三'],
+        ['小I','女',20,'大一'],
+        ['小J','男',20,'大三']
+        ];
+        for(var i = 0; i < 10; i++) {
+        if(infos[i][3] == "大一") { 
+        if(infos[i][1]=="女"){
+        document.write(infos[i][0]+"<br>");
+        }
+        }
+        }
+//在二维数组中，找到性别为女，年级为大一的同学的名字
+</script>
+<script type="text/javascript">
+    function bijiao(a,b){
+        if(a>b){
+            var big=a;
+            return big;
+        }
+        else if(a<b){
+            var big=b;
+            return big;
+        }
+        else{
+            return a;
+        }
+    }
+   
+      document.write(" 5 和 4 的较大值是:"+i+"<br>");
+      document.write(" 6 和 3 的较大值是:"+j);//输出较大的数 
+    </script>
+    <a href="#jump">跳转到尾部</a>
+    <p >
+文档的内容......   
+    </p> 
+    <bdo dir="rtl">该内容向右开始输出
+    </bdo>
+    <blockquote>
+这是一段较长的引用
+这是一段较长的引用
+这是一段较长的引用
+    </blockquote>
+    <q >一段短的引用</q>
+<div>
+    <del>删除效果</del>
+    <ins>插入效果</ins>
+</div>
+<div>
+    <a href="http://www.w3school.com.cn/" target="_blank">用新的页面打开网页
+    </a>
+</div>
+<div>
+    <iframe >
+    </iframe>
+    <p>
+        上面是一个框架，可以添加一些东西
+    </p>
+</div>
+<h3>下面是一个表格 但是没有边框</h3>
+<div>
+    <table border="0">
+      <tr
+         <td colspan="">
+            <div>
+              只有一句话  
+            </div> 
+         </td>
+         <td>
+           <table border="2" align="right">
+            <tr>
+               <td bgcolor="bule">
+                   小表格一
+               </td> 
+               <td align="right">
+                   小表格二
+               </td>
+            </tr>   
+           </table>  
+         </td> 
+      </tr>
+      <tr>
+         <td>这是一个无序列表，有两种类型
+             <div>
+                <ul>
+                    <li>列表项一</li>
+                    <li>列表项二</li>  
+                </ul>
+             </div>
+             <div>
+                <ul type="circle">
+                    <!--改变了列表签的提示点-->
+                    <li>列表三</li>
+                </ul>
+
+             </div>
+         </td> 
+         <td>
+            <a href="http://www.w3school.com.cn/tiy/t.asp?f=html_table_elements" >
+                http://www.w3school.com.cn/tiy/t.asp?f=html_table_elements
+            </a>
+         </td>
+      </tr>  
+    </table>
+</div>
+<div>
+    <p>下面是一个使用了框架属性的表格</p>
+    <table frame="below" border="10">
+        <tr>   
+           <th>第一部分</th>
+           <th>第二部分</th>
+        </tr>
+    </table>
+</div>
+<div>
+    <form>
+        <p>输入信息</p>
+        <input type="text" name="xinxi">
+    </form>
+    <!--这是一个表单元素，更改type的属性值可以更改输入的内容-->
+</div>
+<br><!--换行-->
+<div>
+    <form>
+        <select name="下拉框">
+            <option value="q">内容一</option>
+            <option value="w" selected="selected">内容二</option>
+        </select>
+    </form>
+</div>
+<!--一个初始值为内容二的下拉列表-->
+<input type="button" value="新窗口打开网站" onclick="openWindow()" /> 
+
+<div>
+    <a name="jump">尾部</a>
+</div>
+</body>
+</html>
